@@ -1,0 +1,62 @@
+.hide {
+    visibility: hidden;
+    display: block;
+    position: relative;
+    left: -120px !important;
+}
+.show {
+    display: block;
+    position: relative;
+    left: 0px !important;
+}
+.left-arrow {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: block;
+    height: 22px;
+    width: 18px;
+    position: absolute;
+    top: 400px;
+    left: 0px;
+}
+.right-arrow {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: block;
+    height: 22px;
+    width: 18px;
+    position: absolute;
+    top: 400px;
+    left: 80px;
+}
+.left-arrow.active {
+    background-image: url(https://googledrive.com/host/0ByWLhlo5wO7OV1NRVFREVUc0RGs/gray-left-active.png);
+}
+.left-arrow.inactive {
+    background-image: url(https://googledrive.com/host/0ByWLhlo5wO7OV1NRVFREVUc0RGs/gray-left-inactive.png);
+}
+.right-arrow.active {
+    background-image: url(https://googledrive.com/host/0ByWLhlo5wO7OV1NRVFREVUc0RGs/gray-right-active.png);
+}
+.right-arrow.inactive {
+    background-image: url(https://googledrive.com/host/0ByWLhlo5wO7OV1NRVFREVUc0RGs/gray-right-inactive.png);
+}
+.slide {
+    -webkit-transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    -moz-transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    -o-transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    /* ease-in-out */
+    
+    -webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    -moz-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+    /* ease-in-out */
+    
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
